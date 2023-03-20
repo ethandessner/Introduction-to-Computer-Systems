@@ -1,0 +1,6 @@
+load_file doc1.txt
+print_document
+highlight_text "cmsc"
+print_document
+save_document public08.file.tmp
+exit

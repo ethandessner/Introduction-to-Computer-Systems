@@ -1,0 +1,8 @@
+# creating a paragraph and inserting some lines
+add_paragraph_after 0
+add_line_after 1 0 *first line of the document
+
+add_line_after 1 1 *second line of the document
+   # let's print it
+print_document
+quit

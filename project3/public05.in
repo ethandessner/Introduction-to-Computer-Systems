@@ -1,0 +1,4 @@
+load_file doc1.txt
+load_file doc2.txt
+print_document
+quit

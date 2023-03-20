@@ -1,0 +1,10 @@
+add_paragraph_after 0
+add_paragraph_after 1
+append_line 1 * first line, first paragraph
+append_line 1 * second line, first paragraph
+append_line 2 * first line, second paragraph
+print_document
+  # Removing line
+remove_line 1 1
+print_document
+quit

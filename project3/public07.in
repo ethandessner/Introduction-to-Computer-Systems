@@ -1,0 +1,5 @@
+load_file doc1.txt
+print_document
+remove_text "cmsc"
+print_document
+exit

@@ -1,0 +1,6 @@
+add_paragraph_after 0
+add_line_after 1 0 *Fear the turtle
+add_paragraph_after 10
+print_document
+print_document bla
+quit

@@ -1,0 +1,5 @@
+load_file doc1.txt
+   
+ 
+print_document
+quit
