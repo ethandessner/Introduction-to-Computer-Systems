@@ -1,0 +1,1 @@
+basename /a/b/c && false && [ -e a.c ] && echo 2-1 | bc && [ -x b.c ]

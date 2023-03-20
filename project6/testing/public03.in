@@ -1,0 +1,1 @@
+cat < public1.input | cat - public.input

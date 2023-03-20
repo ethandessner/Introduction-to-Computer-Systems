@@ -1,0 +1,1 @@
+(echo shell && echo turtle) | head -2 | tac
