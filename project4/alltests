@@ -1,0 +1,22 @@
+#!/bin/csh 
+set RED = '\033[1;31m'
+set DE = '\033[0m'
+set GREEN = '\033[1;32m'
+
+if ( ! -e Makefile) then
+    echo "Missing Makefile" && exit
+endif
+make clean
+make
+foreach f ( ./public*.c)
+    set DST = `echo $f | sed 's/\.c//'`;
+    echo  "\n $RED -------------------------------\nRunning test" $DST "$DE";
+    echo  "$RED -------------------------------$DE";
+    if ( -e $DST ) then
+        set OUT = `echo $f | sed 's/\.c/.output/g'`;
+        set IN = `echo $f | sed 's/\.c/.in/g'`;
+        $DST | diff -b - ${OUT} && echo  "\n$GREEN passed ^_^ $DE\n" || echo "\n$GREEN failed [*_*]$DE\n" ;
+    else 
+        echo "$GREEN Make $DST failed $DE "
+    endif
+end
