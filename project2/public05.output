@@ -1,0 +1,15 @@
+Document name: "Testing Document"
+Number of Paragraphs: 1
+First Paragraph, First line
+First Paragraph, Second line
+First Paragraph, Third line
+First Paragraph, Fourth line
+First Paragraph, Fifth line
+
+After removing line # 3
+Document name: "Testing Document"
+Number of Paragraphs: 1
+First Paragraph, First line
+First Paragraph, Second line
+First Paragraph, Fourth line
+First Paragraph, Fifth line
